@@ -9,7 +9,7 @@ int result = 0; // 화폐의 최소 개수를 저장
 std::cout << "거스름돈을 입력하시오.";
 std::cin >> N;
 
-for (i = 0; i<4 ; i++) {
+for (i = 0; N!=0 ; i++) {
   N = N % coin[i];
   result = N/coin[i];
   result += resilt;
