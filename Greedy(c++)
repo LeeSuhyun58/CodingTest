@@ -9,8 +9,8 @@ std::cout << "거스름돈을 입력하시오.";
 std::cin >> N;
 
 for (i = 0; i<4 ; i++) {
-  N = N % coin[i];
   result += N/coin[i];
+  N = N % coin[i];
   
   // coin을 배열로 주지 않고 할 수는 없을까?
   /*if(coin == 500) {
