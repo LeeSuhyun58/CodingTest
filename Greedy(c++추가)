@@ -10,9 +10,9 @@ std::cout << "거스름돈을 입력하시오.";
 std::cin >> N;
 
 for (i = 0; N!=0 ; i++) {
-  N = N % coin[i];
   result += N/coin[i];
-  
+  N = N % coin[i];
+
   if(N/coin==0 || coin_type = 5) {
     coin = coin/coin_type;
     coin_type = 2;
