@@ -1,0 +1,31 @@
+// 거스름돈을 사용자로부터 입력 받는 것이라 생각
+// 즉, N은 변수
+
+int i = 0;
+int coin_type = 5;
+int coin = 500;
+int result = 0; // 화폐의 최소 개수를 저장
+
+std::cout << "거스름돈을 입력하시오.";
+std::cin >> N;
+
+for (i = 0; i<4 ; i++) {
+  N = N % coin[i];
+  result = N/coin[i];
+  result += resilt;
+  
+  if(N/coin==0 || coin_type = 5) {
+    coin = coin/coin_type;
+    coin_type = 2;
+  }
+  
+  if(N/coin==0 || coin_type = 2;) {
+    coin = coin/coin_type;
+    coin_type = 5;
+  }
+ 
+}
+
+std::cout << result;
+
+return 0;
