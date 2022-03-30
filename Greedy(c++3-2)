@@ -1,0 +1,33 @@
+#include<algorithm>
+
+int solution(vector<int> v, int M, int K){
+// vector로 받는 다고 생각
+
+  //int i = 0, end = 0;
+  int count = 0;
+  int sum = 0;
+
+  sort(v.begin(), v.end(), greater<int>())
+  
+  count = (M/(K+1))*k + M % (K+1);
+  
+  sum += count * v[1];
+  sum += (M-count) * v[2];
+  
+  /* 내가 생각한 방법
+  while(M != 0) {
+    sum +=v[i];
+    count ++;
+    M -= count;
+    
+    if(count == k) {
+      count == 0;
+      i = i + 1;
+    } 
+    // 이렇게 코드를 짤 경우, 복잡해짐
+    // 차라리 수열을 차는 것이 
+    
+  */
+  
+  return sum;
+}
