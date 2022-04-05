@@ -16,6 +16,7 @@ def bfs(x, y):
   while queue:
     x, y = queue.popleft()
     
+    #상, 하, 좌, 우를 살핌 -> (고민)오른쪽, 아래만 살피면 되는 것 아닌가?
     for i in range(4):
       nx = x + dx[i]
       ny = y + dy[i]
