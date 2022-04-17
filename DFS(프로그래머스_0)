@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// DFS 이용 -> 재귀함수(+,-)
+// DFS이용 -> 재귀함수(+,-)
 
 // 전역변수 answer
 int answer = 0;
